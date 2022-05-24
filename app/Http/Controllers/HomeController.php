@@ -45,9 +45,13 @@ class HomeController extends Controller
         $datos_usuario=User::all();
         return view('welcome',compact('datos_usuario'));
     }
+
+    // Se requiere manejar excepciones
     public function nuevoRegistro(Request $request){
 
         $contraRepetida = $request->contra_re;
+
+        // La variable $correo, no esta en uso y por tanto no re
         $correo=User::where('correo_recu',$request->correo)->first();
         $longitud=-1;
         $latitud=-1;
@@ -94,6 +98,7 @@ class HomeController extends Controller
         if($contraRepetida != $request->contra){
             return back()->with('mensaje','Contraseñas no coinciden');
         }
+        // BORRAR CODIGO
         //Correo para produccion//
         /*
         if($correo != NULL){
