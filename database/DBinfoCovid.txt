@@ -1,0 +1,92 @@
+
+CREATE DATABASE IF NOT EXISTS info_covid;
+USE info_covid;
+CREATE TABLE IF NOT EXISTS user_all(
+	id_all INT NOT NULL AUTO_INCREMENT,
+    usuario VARCHAR(20) NOT NULL,
+    contra VARCHAR(20) NOT NULL,
+    correo_recu VARCHAR(25)NOT NULL,
+    distrito VARCHAR(40) NOT NULL,
+    sexo ENUM('femenino','masculino')NOT NULL, 
+	telefono VARCHAR(10),
+    ubicacion_establecimiento VARCHAR(40),
+ 	video_muestra VARCHAR(30),
+	documentos VARCHAR(30),
+    tipo ENUM('botica','farmacia'),
+
+    PRIMARY KEY(id_all)
+
+)ENGINE=INNODB;
+
+CREATE TABLE IF NOT EXISTS user_fb(
+	id_fb INT NOT NULL AUTO_INCREMENT,
+    id_all INT NOT NULL,
+    cali_fb INT,
+    requi_complete ENUM('si','no'),
+    PRIMARY KEY(id_fb),
+    CONSTRAINT fk_1 FOREIGN KEY(id_all) REFERENCES user_all(id_all) ON DELETE CASCADE ON UPDATE CASCADE
+
+)ENGINE=INNODB;
+
+CREATE TABLE IF NOT EXISTS user_comment(
+	id_comment INT NOT NULL ,
+    comentario TEXT NOT NULL,
+    etiquetas VARCHAR(120),
+    id_all INT NOT NULL,
+    CONSTRAINT fk_2 FOREIGN KEY(id_all) REFERENCES user_all(id_all) ON DELETE CASCADE ON UPDATE CASCADE
+	
+)ENGINE=INNODB;
+
+
+CREATE TABLE IF NOT EXISTS user_space(
+	id_space INT NOT NULL,
+    name_space VARCHAR(30) NOT NULL,
+    descripcion TEXT,
+    
+    id_fb INT NOT NULL,
+    PRIMARY KEY(id_space),
+    CONSTRAINT fk_3 FOREIGN KEY(id_fb) REFERENCES user_fb(id_fb) ON DELETE CASCADE ON UPDATE CASCADE
+
+)ENGINE=INNODB;
+
+
+CREATE TABLE IF NOT EXISTS user_medi(
+	id_medi INT NOT NULL,
+    name_medi VARCHAR(50) NOT NULL,
+    precio_med INT,
+    descripcion_medi VARCHAR(100),
+    cantidad INT,
+    id_space INT NOT NULL,
+  	CONSTRAINT fk_4 FOREIGN KEY(id_space) REFERENCES user_space(id_space) ON DELETE CASCADE ON UPDATE CASCADE
+)ENGINE=INNODB;
+
+
+INSERT INTO user_all VALUE(1,'gato','gatito','pentaoxi@gmail','San martin','masculino','991217313','Av. la bodegita','1_user/archivo.webm','1_user/archivo.txt','botica');
+INSERT INTO user_all VALUE(2,'perro','perrito','tetra@gmail','Lurigancho','femenino','982721312','Av. las esquinas','2_user/archivo.webm','2_user/archivo.txt','farmacia');
+INSERT INTO user_all(id_all,usuario,contra,correo_recu,distrito,sexo) VALUE(3,'cernicalo','cernicalito','peroxi@gmail','Carabayllo','masculino');
+
+INSERT INTO user_comment VALUE(1,"Hola mundo","INKAFARMA",1);
+INSERT INTO user_comment VALUE(2,"Caminando","INKAFARMA",1);
+INSERT INTO user_comment VALUE(3,"Sigo caminando","INKAFARMA",2);
+INSERT INTO user_comment VALUE(4,"¿Algun dia llegare?","INKAFARMA",1);
+
+INSERT INTO user_fb VALUE(1,1,90,'no');
+INSERT INTO user_fb VALUE(2,2,30,'si');
+
+
+
+INSERT INTO user_space VALUE(1,'INKAFARMA-precios bajos','Simplemente inkafarma',1);
+INSERT INTO user_space VALUE(2,'INKAFARMA-precios bajos','Simplemente inkafarma',2);
+
+
+INSERT INTO user_medi VALUE(1,'Aspirina',2000,'Para dolor de cabeza',2,1);
+INSERT INTO user_medi VALUE(2,'Metanfetamina',2000,'Para dolor de cabeza',9,2);
+INSERT INTO user_medi VALUE(3,'Dolores',2000,'Para dolor de cabeza',1,1);
+INSERT INTO user_medi(id_medi,name_medi,id_space) VALUE(4,'No reconocido',1);
+
+
+
+USE info_covid;
+SELECT user_all.id_all, user_all.usuario, user_all.contra, user_all.documentos, user_all.tipo,user_comment.comentario FROM user_all
+INNER JOIN user_comment
+ON user_all.id_all=user_comment.id_all

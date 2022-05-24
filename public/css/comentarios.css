@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../img/medico5h2.jpg) no-repeat center top;
+    background-size: 100% 180%;
+}
+
+.comentarios{
+    margin: 60px 0;
+    position: center;
+}
+h1{
+    color: rgb(2, 189, 133);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form_comentarios textarea {
+    width: 90%;
+    height: 50%;
+    max-width: 51%;
+    min-width: 40%;
+    min-height: 80px;
+    max-height: 100px;
+    padding: 4px;
+    font-family: 'Roboto' , sans-serif;
+    line-height: 30px;
+    border: 1px solid #1634af;
+    margin-bottom: 0px;
+}
+.btn {
+    background: rgb(9, 170, 162);
+    font-family: 'Roboto',sans-serif;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.mostrar-nombre{
+    color:#0084ff;
+}
+.btn:hover {
+    box-shadow: 0px 0px 9px rgb(16, 17, 17);
+}
+.media{
+    border-top: 1px solid #d8d6d6;
+    
+    padding-top: 5px;
+}
+.media img{
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.media .mostrar-nombre{
+    color:#4b65d1;
+    margin-bottom: 0;
+}
+.media .mostrar-nombre span{
+    font-size: 12px;
+    color: #464646;
+    margin-left: 10px;
+}
+.media .comentario {
+    margin-top: 10px;
+}
+.media .botones{
+    margin-bottom: 10px;
+}
+.media .botones a{
+    color:#acacac;
+    font-size:14px;
+    margin-left: 20px;
+}
+
+.cajita h1{
+    text-align: center;
+    color: #b60d6a;
+    font-size: 50px;
+    font-weight: bold
+}
+

@@ -1,0 +1,102 @@
+Calidad :
+-Agregar al acta de reunion del sprint review, los problemas ocurridos;
+en otras palabras las tareas no completadas
+
+TAREAS NO COMPLETADAS
+
+Tarea	Estado		Razon
+T1	En proceso	Incorrectamente estimado
+T2	Devuelto		No paso criterios de aceptacion				
+T3	No iniciado	Falta de tiempo del encargado	
+T4	No iniciado	Falta de tiempo del encargado
+
+-Agregar velocidad del sprint
+
+
+El octave, Proyecciones
+
+
+
+
+
+	
+
+
+https://drive.google.com/drive/folders/0B3Q9BNmH3MK1fk1mWldId3piNUVFZ05NcXBPMHNvNkpsaFVWVGdYWWFuYVVkemVzMnk2WHc
+
+Mega
+
+folder/3bZnhLLT#JCdGgw247ADRkYPwse1Z_Q/folder/rWZ0WSLS : No entrar
+folder/qloRjQbS#Q5CSpuo38T9fFPMTDzZDNg/folder/j4wlRKBT 
+
+https://mega.nz/folder/6ll1nYiJ#xDZAn1lcbnjlYZi-D4H7bg/folder/6h0VSKZD  Para Ingles
+
+
+Norma NTP-ISO/IEC 14598.
+
+
+Beneficios del estándar
+	Los desarrolladores pueden usar los resultados de la evaluación con el fin de hacer mejoras 	en el producto o tomar decisiones sobre la estrategia de evolución que seguirá el producto 	software.
+
+
+	Para los adquirientes del producto, los resultados de evaluación pueden ser usados como 	un dato objetivo a la hora de decidir si adquirir o no el producto.
+
+	Para la industria en general, la difusión de la evaluación de productos de software ayudará a 	que se utilice la calidad como un argumento de marketing.
+
+
+
+
+Exposicion
+
+
+
+XD XD XD XD XD XD 
+
+ISO/IEC -4 PROCESO PARA ADQUIRIENTES
+-Definicion del nombre "Proceso para adquirientes" -> Compradores -> Valor justo
+-¿Que es ? -> Entrada -> Evaluacion y valoracion->Precio mas justo
+-¿Norma NTP en Peru?->Toda la 14598 tipo de proceso extendido(ampliaciones de los procesos y actividades existentes)
+-Explicar grafico
+
+
+
+	Para los proveedores de un producto, un beneficio de dicha evaluación puede ser añadir un 		valor al producto, puesto que el hecho de que cumple el estándar es sinónimo de que el 		producto posee cierta calidad.
+
+
+
+
+
+El propósito del Proceso de Evaluación del Producto es asegurar a través de
+exámenes y mediciones sistemáticas que un producto satisface las necesidades
+declaradas e implicadas de los usuarios de ese producto. 
+
+
+ISO/OEC -5 PROCESO PARA EVALUADORES
+
+Modelos de calidad :calidad interna(metricas internas) , calidad externa y calidad de uso(basicamente lo que el usuario prueba y mira si es eficaz, productivo y satisface)
+
+Establecimiento de los requisitos de evaluacion-> Solicitante, documento,caracteriticas imporntates
+Especificacion de la evaluacion->Alcance 
+Diseño de evaluacion->Plan de evaluacion-> Recursos necesarios	(humano,materiales,tecnologicos,etc.), distribucion y asignacion
+Ejecucion-> Genera registro de evaluacion y el borrador del informe de evaluacion
+Conclusion ->Cada parte, requisitos,especificacion, diseño,ejecucion y conclusion tiene su borrador
+	esos borradores se evaluan y se aprueban
+
+
+
+Generar activador : https://www.smartserials.com/serials/microsoft_project_professional_2013_33988.htm
+JH6XM-NYR3P-GGJWT-FRBVJ-BWPCJ
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+Hola mundo mi nombre es BLBLL caminando por el camino de todo personada todo camindno de m
+Todo tenemos que ver sobre la caminacion detodoo  , pero i borarar adadmn nej enecjn fjej fjef fdf
+fsf fj ej n unwnvbewjc ewrnwrjwenujinwjn wjfe few ewfe
+efwf wenfnfjwnfjedjnianwiqjnianefiejfienvnvdsfnepfe ef ef nekfnekqjqo j q q
+ff eknfejfnejn ienf qnifq eo fmqef qeokfqo ekqk eojfqej eqf eqfj qefj qfqf
+ fqefm qenf qenfiqenf qfqeofnqe qoqwccaminando coo o yo e he e estaod acaminado en todo lo que tengna qquhe cvenr e faftjdsda  akfcaj aca por eso tienee que estar todo le dia ene la compuadora par apractica rt practicar hasya que la fmeurte nos e
+separe de toca caminanci0n o como el otro no poidj a salir de esa interfaz de la uktim se?ak acu
+por eso nosotros no podians a cmnar de la sonido de todos los caminantes por eso teemso que borrar todod contenido sobre el que 
+tiene toda ventaja por eso nosotros solo hacemos caso al men que solo
+
+
+            @foreach ($mapaUserFbs as $mapaUserFb)
+
+
+                L.marker([{{$mapaUserFb->latitude_fb}},{{$mapaUserFb->longitude_fb}}],{icon: iconMarker}).addTo(myMap).bindPopup(
+                    "<h4 class='nameHeadSpace' ><a href='{{route('home.pagUser',$mapaUserFb->userSpace->name_space)}}'>{{$mapaUserFb->userSpace->name_space}}<a/></h4><hr style='border: 0.8px solid rgb(50,68,228);'/>" +
+                     "<label class='nameHeadSpace'>Descripcion : {{$mapaUserFb->userSpace->descripcion}}</label>"+
+                    "<br><label class='nameHeadSpace'>Calificacion : {{$mapaUserFb->cali_fb}}</label><br>"+
+                    "<label class='nameHeadSpace'>Establecimiento verificado : </label><label class='requisitosColor'>{{$mapaUserFb->requi_complete}}</label>");
+
+            @endforeach

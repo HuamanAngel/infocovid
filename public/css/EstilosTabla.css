@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../img/medico4.jpg) no-repeat center top;
+    background-size: 100% 220%;
+}
+
+.contenedorTabla{
+    margin: 150px auto;
+    width: 1000px;
+    float: left;
+}
+table{
+    background-color: white;
+    text-align: left;
+    width: 100%;
+}
+th, td{
+    padding: 10px;
+}
+.buscarMapa{
+    background: #399794;
+    border-radius: 5px;
+    color:white;
+    width:120%;
+    text-align:center;
+    margin-top: 15%;
+    margin-left: 110%;
+}
+thead{
+    background: #399794;
+    border-bottom: solid 5px blue;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #e3e4e3;
+}
+tr:hover td{
+    background-color: aquamarine;
+    color:white;
+
+}
+h1{
+    text-align: center;
+    color: #b60d6a;
+    font-size: 50px;
+    font-weight: bold
+}
+h2{
+    text-align: center;
+    color: #20b48f;
+    font-size: 30px;
+    font-weight: bold
+}
+.contenedorMapa{
+    float: left;
+}
