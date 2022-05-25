@@ -32,6 +32,17 @@ class TablaPreciosController extends Controller
         return view('preciosTabla', compact('precios','mapaUserFbs','establecimientos_ubi'));
      
     }
+    
+    /*
+    *
+    * Mantenimiento de busqueda de precios por parte del usuario - Brandom Noriega
+    *
+    */
+    public function buscarSearch(Request $request)
+    {
+        // codigo a modificar
+     
+    }
 
     /* public function filtroSearch(Request $request){
         $precios=user_medi::paginate(7);
