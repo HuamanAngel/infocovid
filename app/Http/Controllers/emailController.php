@@ -7,7 +7,7 @@ use App\Mail\MessageReceived;
 class emailController extends Controller
 {
     public function index(){
-        $valor=['nombre'=>"Juan",'apellido'=>"Pedro",'edad'=>12];
+        $valor=['nombre'=>"Juan",'apellido'=>"Pedro",'edad'=>12]; /* Se debe añadir un método que obtenga el usuario de la aplicación */
         Mail::to('caminante98123.123@gmail.com')->send(new MessageReceived($valor));
         return new MessageReceived($valor);
     
