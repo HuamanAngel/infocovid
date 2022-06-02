@@ -32,19 +32,8 @@ class LoginController extends Controller
         $span->annotate('Order Validated');             
         $span3 = Trace::startSpan('vaca');      
         $span->annotate('Fin Validated');             
-        // $span->tag('user', 'John');
         $valor = Trace::getCurrentSpan();
-        dd($valor);
-        // $span->setTag('user', 'John');
-        // $span->log('info', 'User logged in');
         $span->finish();
-        dd("vaca");
-
-        // $spanContext = Trace::extract($request, Formats::ILLUMINATE_HTTP);
-
-        // $rootSpan = Trace::startSpan('Create Order', $spanContext);
-        
-        // $childSpan = Trace::startSpan('Validate Order', $rootSpan->getContext());          
         return view('login');
     }
 
