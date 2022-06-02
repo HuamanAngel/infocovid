@@ -11,7 +11,8 @@ use App\user_fb;
 use App\establecimientos;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\MessageReceived;
-
+use Vinelab\Tracing\Facades\Trace;
+use Vinelab\Tracing\Contracts\Tracer;
 use App\Mail\MessageReporte;
 use App\Mail\MessageReporteNoti;
 //use App\Providers\RouteServiceProvider;
@@ -25,7 +26,25 @@ class LoginController extends Controller
     }
 
     public function showLoginForm()
-    {
+    {   
+        $span = Trace::startSpan('Nuevo tracer');      
+        $span2 = Trace::startSpan('Otro traacer');
+        $span->annotate('Order Validated');             
+        $span3 = Trace::startSpan('vaca');      
+        $span->annotate('Fin Validated');             
+        // $span->tag('user', 'John');
+        $valor = Trace::getCurrentSpan();
+        dd($valor);
+        // $span->setTag('user', 'John');
+        // $span->log('info', 'User logged in');
+        $span->finish();
+        dd("vaca");
+
+        // $spanContext = Trace::extract($request, Formats::ILLUMINATE_HTTP);
+
+        // $rootSpan = Trace::startSpan('Create Order', $spanContext);
+        
+        // $childSpan = Trace::startSpan('Validate Order', $rootSpan->getContext());          
         return view('login');
     }
 

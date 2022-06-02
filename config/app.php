@@ -174,7 +174,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        \Ytake\LaravelAspect\AspectServiceProvider::class,
+        // added Artisan Command
+        \Ytake\LaravelAspect\ConsoleServiceProvider::class,        
+        Go\Laravel\GoAopBridge\GoAopServiceProvider::class,
     ],
 
     /*

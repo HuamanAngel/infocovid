@@ -1,0 +1,82 @@
+<?php return array (
+  AOP_ROOT_DIR . '\\app\\Http\\Controllers\\TablaPreciosController.php' => 
+  array (
+    'filemtime' => 1654142231,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\user_medi.php' => 
+  array (
+    'filemtime' => 1654142231,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\user_fb.php' => 
+  array (
+    'filemtime' => 1654142231,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\establecimientos.php' => 
+  array (
+    'filemtime' => 1654142231,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\comments_general.php' => 
+  array (
+    'filemtime' => 1654141920,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Controllers\\HomeController.php' => 
+  array (
+    'filemtime' => 1654141880,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Controllers\\NoticiasController.php' => 
+  array (
+    'filemtime' => 1654140884,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\noticias_a.php' => 
+  array (
+    'filemtime' => 1654140884,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Middleware\\TrustProxies.php' => 
+  array (
+    'filemtime' => 1654140799,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Middleware\\CheckForMaintenanceMode.php' => 
+  array (
+    'filemtime' => 1654140799,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Middleware\\TrimStrings.php' => 
+  array (
+    'filemtime' => 1654140799,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Controllers\\Auth\\LoginController.php' => 
+  array (
+    'filemtime' => 1654140799,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Controllers\\Controller.php' => 
+  array (
+    'filemtime' => 1654140799,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Middleware\\EncryptCookies.php' => 
+  array (
+    'filemtime' => 1654140799,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Middleware\\VerifyCsrfToken.php' => 
+  array (
+    'filemtime' => 1654140799,
+    'cacheUri' => NULL,
+  ),
+  AOP_ROOT_DIR . '\\app\\Http\\Middleware\\RedirectIfAuthenticated.php' => 
+  array (
+    'filemtime' => 1654140799,
+    'cacheUri' => NULL,
+  ),
+);
