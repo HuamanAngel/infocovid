@@ -82,6 +82,7 @@ class LoginController extends Controller
     }
 
     public function update(Request $request){
+        //Es necesario que cada campo tenga requerimientos de entrada, para quitar la mayoría de los condicionales innecesarios
         $usuarioLogeado =\Auth::user(); 
         if($request->contra!=NULL){
             if($request->contra != $request->contra_re){
